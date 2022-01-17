@@ -22,13 +22,22 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.logo {
+.logo-left {
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--accent-color);
+}
+
+.logo-right {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--id-color);
 }
 
 .header-list {
@@ -99,6 +108,7 @@ body {
 }
 
 .slogan-button {
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -180,8 +190,17 @@ body {
     background: #2F303A;
 }
 
+.logo-right-footer {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+}
+
 .footer-list {
-    font-style: inherit;
+    font-style: normal;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -219,6 +238,7 @@ body {
 
 .menu-button {
     cursor: pointer;
+    font-family: inherit;
 }
 
 .menu-button:hover, .menu-button:focus {
