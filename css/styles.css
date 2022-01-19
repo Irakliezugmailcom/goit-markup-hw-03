@@ -18,6 +18,12 @@ ul {
     padding: 0;
 }
 
+.container {
+    width: 1200px;
+    padding-left: 215px;
+    padding-right: 215px;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -29,6 +35,8 @@ body {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--accent-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .logo-right {
@@ -38,16 +46,19 @@ body {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--id-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-list {
-    font-family: inherit;
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--id-color);
     list-style-type: none; 
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link-portfolio, .header-link-studio, .header-link-contacts {
@@ -76,7 +87,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--id-color);
     list-style-type: none; 
-
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-link-mail:hover, .header-link-mail:focus {
