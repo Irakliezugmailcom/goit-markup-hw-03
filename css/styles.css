@@ -5,9 +5,6 @@
     --accent-color: #2196F3;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 p, h1, h2, h3 {
     margin: 0;
@@ -16,12 +13,6 @@ p, h1, h2, h3 {
 ul {
     margin: 0;
     padding: 0;
-}
-
-.container {
-    width: 1200px;
-    padding-left: 215px;
-    padding-right: 215px;
 }
 
 body {
@@ -35,8 +26,7 @@ body {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--accent-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    text-decoration: none;
 }
 
 .logo-right {
@@ -46,24 +36,17 @@ body {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--id-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
+    text-decoration: none;
 }
 
-.header-list {
+.header-link-portfolio, .header-link-studio, .header-link-contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
     color: var(--id-color);
     list-style-type: none; 
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
-.header-link-portfolio, .header-link-studio, .header-link-contacts {
     text-decoration: none;
-    color: var(--id-color);
     cursor: pointer;
 }
 
@@ -79,25 +62,18 @@ body {
     color: var(--accent-color);
 }
 
-.header-list-mail-tel {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: var(--id-color);
-    list-style-type: none; 
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-
 .header-link-mail:hover, .header-link-mail:focus {
     color: var(--accent-color);
 }
 
 .header-link-mail, .header-link-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--subid-color);
+    list-style-type: none; 
     text-decoration: none;
-    color: var(--id-color);
     cursor: pointer;
 }
 
@@ -209,6 +185,7 @@ body {
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--title-color);
+    text-decoration: none;
 }
 
 .footer-list {
@@ -217,11 +194,15 @@ body {
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--title-color);
-    color: var(--title-color);
     list-style-type: none;
 }
 
-.footer-link-adderess, .footer-link-adderess-text, .footer-link-mail, .footer-link-tel {
+.footer-link-adderess, .footer-link-adderess-text {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+ .footer-link-mail, .footer-link-tel {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -258,7 +239,6 @@ body {
     background: var(--accent-color);
 }
 
-
 .projects-item {
     list-style-type: none;
 }
@@ -266,7 +246,7 @@ body {
 .projects-description {
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: calc(36 / 18);
     /* identical to box height, or 200% */
     letter-spacing: 0.06em;
     color: var(--id-color)
@@ -275,7 +255,7 @@ body {
 .projects-title {
     font-weight: normal;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30 / 16);
     /* identical to box height, or 187% */
     letter-spacing: 0.03em;
     color: var(--subid-color);
