@@ -148,6 +148,7 @@ body {
     align-items: center;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .slogan-title {
