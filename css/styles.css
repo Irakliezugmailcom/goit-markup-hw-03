@@ -29,11 +29,17 @@ a {
 
 .container {
     width: 1200px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
     outline: 2px solid tomato;
     align-items: center;
+}
+
+.header {
+    border-bottom: 1px;
+    border: 1px solid #ECECEC;
 }
 
 .header-container {
@@ -78,6 +84,7 @@ a {
 .header-list {
     list-style-type: none;
     display: flex;
+    margin-left: 93px;
 }
 
 .header-link-portfolio, .header-link-studio, .header-link-contacts {
@@ -93,10 +100,6 @@ a {
 
 .current {
     color: var(--accent-color);
-}
-
-.header-item {
-    margin-left: 93px;
 }
 
 .header-item + .header-item {
@@ -172,21 +175,22 @@ a {
     text-align: center;
     justify-content: center;
     display: block;
-    background-image: linear-gradient (to right, rgba(47, 48, 58, 0.4), 
-    );
-    background-image: url(../images/Img-13.jpg);
+    background-image: linear-gradient (
+        to right, rgba(47, 48, 58, 0.4), 
+        );
+        url(../images/Img-13.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
-.slogan-title-container {
+/* .slogan-title-container {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 .slogan-title {
     font-weight: 900;
@@ -196,9 +200,11 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--title-color);
-    padding-top: 200px;
     align-items: center;
     text-align: center;
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .slogan-button {
@@ -215,6 +221,7 @@ a {
     margin-top: 30px;
     min-width: 200px;
     height: 50px;
+    border: transparent;
 }
 
 .section {
@@ -372,15 +379,19 @@ a {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-link-adderess {
+.footer-link-address {
    margin-top: 20px;
 }
 
-.footer-link-adderess:hover, .footer-link-adderess-text:hover, .footer-link-mail:hover, .footer-link-tel:hover {
+.footer-link-mail:hover, .footer-link-tel:hover {
     color: var(--title-color);
 }
 
-.footer-link-adderess:focus, .footer-link-adderess-text:focus, .footer-link-mail:focus, .footer-link-tel:focus {
+.footer-link-address:hover, {
+    color: var(--accent-color);
+}
+
+.footer-link-address:focus, .footer-link-mail:focus, .footer-link-tel:focus {
     color: var(--title-color);
 }
 
@@ -448,7 +459,9 @@ a {
 .projects-item-pad {
     padding: 20px 24px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
     box-sizing: border-box;
 }
 
